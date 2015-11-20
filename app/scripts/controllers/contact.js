@@ -13,6 +13,7 @@ angular.module('yeomanScafoldingProjectApp')
         $scope.contact = {};
         $scope.contact.name;
         $scope.contact.email;
+        $scope.contact.temp;
         $scope.contact.comments;
 
         $scope.events= {};
