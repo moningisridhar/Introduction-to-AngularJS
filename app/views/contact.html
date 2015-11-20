@@ -1,0 +1,22 @@
+<div class="col-md-8">
+    <div class="row">
+        <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required ng-model="contact.name">
+        </div>
+        <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required ng-model="contact.email">
+        </div>
+    </div>
+    <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5" ng-model="contact.comments"></textarea>
+    <br>
+    <div class="row">
+        <div class="col-md-12 form-group">
+            <button class="btn pull-right" type="submit" ng-click="submit()">Send</button>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-10" ng-repeat="eve in events">
+        <div>{{eve.venue}}</div>
+    </div>
+</div>
